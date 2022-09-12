@@ -1,0 +1,12 @@
+{% extends "file/bash.html" %}
+
+{% block title %}
+books
+{% endblock %}
+{% block content %}
+
+{% for i in mybooks %}
+    {{i}}
+{%endfor%}
+
+{% endblock %}
