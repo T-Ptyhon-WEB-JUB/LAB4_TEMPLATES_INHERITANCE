@@ -1,16 +1,6 @@
-# LAB_3_TEMPLATES
+# LAB4_TEMPLATES_INHERITANCE
 
-# Create a new website using Django . Your website should have the following paths :
-#### today/
-  This should return the date of today .
-  
-#### random/password/
-  This should return a random password . 
-  
-### favs/books/
-   This should return a list of your favorite books.
-  
-
-
-### Make sure to use templates for each of the above paths . 
-
+# Using your previous LAB 3 , do the following :
+- Create a base.html template
+- Let other templates inherit from base.html
+- Use Bootstrap to style it (add navigation bar)
