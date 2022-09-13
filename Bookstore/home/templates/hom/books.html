@@ -1,0 +1,10 @@
+{% extends 'Home/base.html' %}
+
+<h1>My fav books are :</h1>
+<ul>
+    {% for  books in books %}
+        <li>
+            {{books}}
+        </li>
+    {% endfor %}
+</ul>
