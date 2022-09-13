@@ -1,0 +1,15 @@
+{% extends "home/base.html" %} 
+{% block content %}
+<main>
+    <h1>
+        your Books list
+    </h1>
+    <ul>
+        {%for book in books %}
+        <li>
+            {{book}}    
+        </li>
+        {%endfor%}
+    </ul>
+</main>
+{% endblock %}
