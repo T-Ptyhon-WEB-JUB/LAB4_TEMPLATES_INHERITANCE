@@ -1,0 +1,9 @@
+{% extends "home/base.html" %} {% block title %}{{"my favorite books!"|title}}
+{% endblock %} {% block content %}
+<h1>Here are my favorite books:</h1>
+<ul>
+  {% for book in books %}
+  <li>{{ book }}</li>
+  {% endfor %}
+</ul>
+{% endblock %}
