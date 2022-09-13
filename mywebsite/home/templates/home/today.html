@@ -1,0 +1,9 @@
+{% extends 'home/base.html' %}
+{% block title %}Today is{% endblock %}
+{% block content %}
+<div class="row m-5 p-3 bg-success bg-gradient bg-opacity-50">
+    <div class="col">
+        <h4 class="h4">{{ today_date }}</h4>
+    </div>
+</div>
+{% endblock%}
