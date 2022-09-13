@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial
+-scale=1"
+    />
+    <title>{% block title %} {% endblock %}</title>
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+      <div class="container light py-2">
+        <a class="navbar-brand" href="http://127.0.0.1:8000/">Muath-Website</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Apps Dropdown
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="http://127.0.0.1:8000/today"
+                    >Today Date</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="http://127.0.0.1:8000/password"
+                    >Random Password Generator</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="http://127.0.0.1:8000/books"
+                    >Books</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="list-group w-auto container py-5 ">
+      <h1>Hello and Welcome</h1>
+      <h2 class="pb-3">Please Choose one from the list bellow:</h2>
+      <a
+        href="http://127.0.0.1:8000/today"
+        class="list-group-item list-group-item-action d-flex gap-3 py-3"
+        aria-current="true"
+      >
+        <img
+          src="https://github.com/twbs.png"
+          alt="twbs"
+          width="32"
+          height="32"
+          class="rounded-circle flex-shrink-0"
+        />
+        <div class="d-flex gap-2 w-100 justify-content-between">
+          <div>
+            <h6 class="mb-0">Todays Date</h6>
+            <p class="mb-0 opacity-75">This app shows you todays date.</p>
+          </div>
+          <small class="opacity-50 text-nowrap">now</small>
+        </div>
+      </a>
+      <a
+        href="http://127.0.0.1:8000/password"
+        class="list-group-item list-group-item-action d-flex gap-3 py-3"
+        aria-current="true"
+      >
+        <img
+          src="https://github.com/twbs.png"
+          alt="twbs"
+          width="32"
+          height="32"
+          class="rounded-circle flex-shrink-0"
+        />
+        <div class="d-flex gap-2 w-100 justify-content-between">
+          <div>
+            <h6 class="mb-0">Random Password Generator</h6>
+            <p class="mb-0 opacity-75">This app generate a random password</p>
+          </div>
+          <small class="opacity-50 text-nowrap">now</small>
+        </div>
+      </a>
+      <a
+        href="http://127.0.0.1:8000/books"
+        class="list-group-item list-group-item-action d-flex gap-3 py-3"
+        aria-current="true"
+      >
+        <img
+          src="https://github.com/twbs.png"
+          alt="twbs"
+          width="32"
+          height="32"
+          class="rounded-circle flex-shrink-0"
+        />
+        <div class="d-flex gap-2 w-100 justify-content-between">
+          <div>
+            <h6 class="mb-0">My Favorite Books</h6>
+            <p class="mb-0 opacity-75">This app shows my Favorite Books</p>
+          </div>
+          <small class="opacity-50 text-nowrap">now</small>
+        </div>
+      </a>
+    </div>
+    <div class="container p-0">{% block content %} {% endblock %}</div>
+  </body>
+</html>

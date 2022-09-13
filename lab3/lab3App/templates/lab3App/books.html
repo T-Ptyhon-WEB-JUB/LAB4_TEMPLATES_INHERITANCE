@@ -1,0 +1,18 @@
+{% extends 'lab3App/base.html' %}
+
+{% block title %} Books 
+{% endblock %} 
+
+{%block content %}
+<ul class = "p-0 m-0">
+  <h3 class="card-header text-primary">My Favorite Books are:</h3>
+  {% for book in books%}
+  <li class="py-3 m-0 p-0 list-unstyled">
+    <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">{{book}}</h5>
+    </div>
+  </li>
+  {% endfor%}
+</ul>
+{% endblock %}
