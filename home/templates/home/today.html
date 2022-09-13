@@ -1,0 +1,15 @@
+{% extends "home/base.html" %} {% block title %}Today's date {% endblock %}
+{%block content %}
+<div
+  style="
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  "
+>
+  <div style="text-align: center">
+    <h1>It is {% now "jS F Y H:i" %}</h1>
+  </div>
+  {% endblock %}
+</div>
