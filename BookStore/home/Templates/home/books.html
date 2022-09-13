@@ -1,0 +1,21 @@
+{% extends 'home/base.html' %}
+
+{% block title %}
+   Page Title
+
+   {% endblock %}
+
+   {% block content %}
+   <h1 style="margin-top: 50px;">My Favorite Books is </h1>
+
+   <ul>
+
+    {% for n in books %}
+   <li>
+       
+       {{ n }}
+   </li>
+   {% endfor %}
+   </ul>
+      {% endblock %}
+
